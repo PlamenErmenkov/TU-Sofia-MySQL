@@ -19,6 +19,6 @@ insert into students_2 (student_name, address, age, representative_id) values
 ('Iliya Stoynov Todorov', 'Sofia - Nadezhda', 49, null),
 ('Mariela Dimitrova Yordanova', 'Sofia - Knyajevo', 32, 5);
 
-select student_name as student, address, age
+select students.student_name as students, students.address, students.age
 from students_2 as students join students_2 as representative
-on students.representive_id = representative.student_id;
+on students.representative_id = representative.student_id;
